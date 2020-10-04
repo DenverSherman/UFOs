@@ -22,7 +22,7 @@
         </nav>
     </div>
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth is Out There</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -40,27 +40,37 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
-            <form>
-                <p>Filter Search</p>
-            </form>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <label for="date">Enter Date</label>
-                    <input type="text" placeholder="1/10/2010" id="datetime" />
-
-                </li>
-                <li class="list-group-item">
-                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                
-                </li>
-
-            </ul>
+            <div class="col-md-3">
+                <form>
+                    <p>Filter Search</p>
+                </form>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <label for="date">Enter Date</label>
+                        <input type="text" placeholder="1/10/2010" id="datetime" />
+                    </li>
+                    <li class="list-group-item">
+                        <label for="city">Enter a City</label>
+                        <input type="text" placeholder="Fresno" id="city" />
+                    </li>
+                    <li class="list-group-item">
+                        <label for="state">Enter a State</label>
+                        <input type="text" placeholder="CA" id="state" />
+                    </li>
+                    <li class="list-group-item">
+                        <label for="country">Enter a Country</label>
+                        <input type="text" placeholder="US" id="country" />
+                    </li>
+                    <li class="list-group-item">
+                        <label for="shape">Enter a Shape</label>
+                        <input type="text" placeholder="light" id="shape" />
+                    </li>
+                </ul>
+            </div>
 
             <div class="col-md-9">
                 <table class="table table-striped">
                   <thead>
-                      
                     <tr>
                       <th>Date</th>
                       <th>City</th>
