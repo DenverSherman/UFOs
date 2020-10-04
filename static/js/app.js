@@ -19,20 +19,29 @@ function buildTable(data) {
     Object.values(dataRow).forEach((val) => {
       let cell = row.append("td");
       cell.text(val);
+
+
     });
   });
 }
 
+buildTable(tableData);
+
+
 // 1. Create a variable to keep track of all the filters as an object.
+var filters = {};
 
 
 // 3. Use this function to update the filters. 
 function updateFilters() {
-
     // 4a. Save the element that was changed as a variable.
-
+  let date = d3.select("#datetime").property("value");
+  let city = d3.select("#city").property("value");
+  let state = d3.select("#state").property("value");
+  let country = d3.select("#country").property("value");
+  let shape = d3.select("#shape").property("value");
     // 4b. Save the value that was changed as a variable.
-
+  let filters = 
     // 4c. Save the id of the filter that was changed as a variable.
 
   
@@ -63,4 +72,4 @@ function updateFilters() {
   
   
   // Build the table when the page loads
-  buildTable(tableData);
+  
